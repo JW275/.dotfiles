@@ -93,4 +93,4 @@ export TERM=xterm
 
 source $ZSH/zsh-vcs-prompt/zshrc.sh
 ZSH_VCS_PROMPT_ENABLE_CACHING='true'
-PROMPT=$'%{$fg[yellow]%}%* %n%{$reset_color%} %{$fg[red]%}[%m] %{$fg_no_bold[cyan]%}{ %~ }%{$reset_color%}%a $(vcs_super_info)${NEWLINE} $ '
+PROMPT=$'%{$FG[141]%}%D{20%y/%m/%d} %* ${NEWLINE}%{$reset_color%}%{$FG[159]%}%n %{$reset_color%}%{$fg[yellow]%}[%m] %{$fg_no_bold[cyan]%}{ %~ }%{$reset_color%}%a $(vcs_super_info)${NEWLINE} $ '
