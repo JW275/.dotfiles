@@ -5,7 +5,7 @@ Dotfiles
 <br>
 1. cloning repo.
 ```
-git clone git@github.com:norangLemon/.dotfiles.git
+git clone https://github.com/JW275/.dotfiles.git
 ```
 <br>
 2. run install
