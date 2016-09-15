@@ -13,3 +13,8 @@ git clone https://github.com/JW275/.dotfiles.git
 ```
 ./install
 ```
+
+### Docs
+
+<a href="http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html">zsh prompt</a><br>
+<a href="https://gabri.me/blog/custom-colors-in-your-zsh-prompt">zsh prompt colors</a>
