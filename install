@@ -1,5 +1,12 @@
 #! /bin/bash 
 
+# for pyenv
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+    libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+    xz-utils tk-dev
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+
+# for zsh & oh-my-zsh
 sudo apt install zsh
 chsh -s $(which zsh)
 echo "set-option -g default-shell $(which zsh)" > ~/.tmux.conf
@@ -8,9 +15,11 @@ ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 git clone git://github.com/yonchu/zsh-vcs-prompt.git ~/.oh-my-zsh/zsh-vcs-prompt
 
+# for vim
 sudo apt install exuberant-ctags
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ln -sf ~/.dotfiles/.vimrc ~/.vimrc
 vim +PluginInstall +qall
 
+# for gitconfig
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
