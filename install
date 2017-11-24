@@ -1,11 +1,14 @@
 #! /bin/bash 
 
+sudo apt install zsh
 chsh -s $(which zsh)
+echo "set-option -g default-shell $(which zsh)"
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 git clone git://github.com/yonchu/zsh-vcs-prompt.git ~/.oh-my-zsh/zsh-vcs-prompt
 
-
+sudo apt install exuberant-ctags
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ln -sf ~/.dotfiles/.vimrc ~/.vimrc
 vim +PluginInstall +qall
