@@ -2,7 +2,7 @@
 
 sudo apt install zsh
 chsh -s $(which zsh)
-echo "set-option -g default-shell $(which zsh)"
+echo "set-option -g default-shell $(which zsh)" > ~/.tmux.conf
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
